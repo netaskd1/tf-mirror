@@ -19,19 +19,21 @@ provider "azurerm" {
 
 
 # tf-mirror
-```bash
-vi ~/.terraformrc
-```
+
 ```terraform
+MIRROR="https://terraform-mirror.yandexcloud.net/"
+
+cat << EOF >| ~/.terraformrc
 provider_installation {
   network_mirror {
-    url = "https://terraform-mirror.yandexcloud.net/"
+    url = "${MIRROR}"
     include = ["registry.terraform.io/*/*"]
   }
   direct {
     exclude = ["registry.terraform.io/*/*"]
   }
 }
+EOF
 ```
 
 ```terraform
