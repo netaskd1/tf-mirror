@@ -167,7 +167,6 @@ provider "genymotion" {}
 provider "github" {}
 provider "gitlab" {}
 provider "google" {}
-provider "google" {}
 provider "googleworkspace" {}
 provider "grafana" {}
 provider "gridscale" {}
@@ -187,7 +186,6 @@ provider "influxdb" {}
 provider "infoblox" {}
 provider "jdcloud" {}
 provider "ksyun" {}
-provider "kubernetes" {}
 provider "kubernetes" {}
 provider "lacework" {}
 provider "launchdarkly" {}
